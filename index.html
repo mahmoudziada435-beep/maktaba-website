@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>متجرنا</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="fade-in">
+    <h1>متجرنا</h1>
+</header>
+
+<section class="products">
+
+    <div class="product fade-in">
+        <img src="https://via.placeholder.com/250" alt="منتج">
+        <h3>دفتر مدرسي</h3>
+        <p>سعر: 10 شيكل</p>
+        <button onclick="addToCart('دفتر مدرسي', 10)">أضف للسلة</button>
+    </div>
+
+    <div class="product fade-in">
+        <img src="https://via.placeholder.com/250" alt="منتج">
+        <h3>لعبة أطفال</h3>
+        <p>سعر: 40 شيكل</p>
+        <button onclick="addToCart('لعبة أطفال', 40)">أضف للسلة</button>
+    </div>
+
+</section>
+
+<section class="cart fade-in">
+    <h2>سلة المشتريات</h2>
+    <ul id="cart-items"></ul>
+    <h3 id="total">المجموع: 0 شيكل</h3>
+    <button onclick="sendWhatsApp()">إتمام الطلب عبر واتساب</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
